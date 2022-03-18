@@ -30,6 +30,5 @@ app.get('/menu', function (req, res) {
   res.send(A)
 })
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-  })
+app.listen(process.env.PORT || 3000, 
+	() => console.log("Server is running..."));
